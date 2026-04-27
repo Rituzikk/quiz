@@ -384,7 +384,7 @@ if st.session_state.difficulty is None and not st.session_state.finished:
             <p style="font-size:0.8rem;">20 вопросов</p>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("СТАРТ (СРЕДНИЙ)", key="start_medium", use_container_width=True):
+        if st.button("СТАРТ ", key="start_medium", use_container_width=True):
             start_quiz("medium")
             st.rerun()
 
@@ -397,7 +397,7 @@ if st.session_state.difficulty is None and not st.session_state.finished:
             <p style="font-size:0.8rem;">20 вопросов</p>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("СТАРТ (СЛОЖНЫЙ)", key="start_hard", use_container_width=True):
+        if st.button("СТАРТ ", key="start_hard", use_container_width=True):
             start_quiz("hard")
             st.rerun()
 
